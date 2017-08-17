@@ -8,13 +8,18 @@ This Dockerfile automates that compilation and creates a container
 with libpostal and [libpostal-rest](https://github.com/johnlonganecker/libpostal-rest) libpostal-rest which allows for a simple REST API
 that makes it easy interact with libpostal.
 
-## Build image and start up container
+## Running
+```
+docker run -d -p 8080:8080 colebrokamp/libpostal-rest
+```
+## Building
+
+### Build image and start up container
 ```
 docker build -t libpostal-rest .
 docker run -d -p 8080:8080 libpostal-rest
 ```
-
-## Build image from specific libpostal git hash
+### Build image from specific libpostal git hash
 ```
 docker build -t libpostal-rest --build-arg COMMIT=e816b4f77e8c6a7f35207ca77282ffab3712c5b6 .
 ```
