@@ -10,7 +10,7 @@ that makes it easy interact with libpostal.
 
 ## Running
 ```
-docker run -d -p 8080:8080 colebrokamp/libpostal-rest
+docker run -d -p 8080:8080 colebrokamp/libpostal-rest-docker
 ```
 ## Building
 
