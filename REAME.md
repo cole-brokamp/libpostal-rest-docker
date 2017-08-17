@@ -12,6 +12,18 @@ that makes it easy interact with libpostal.
 ```
 docker run -d -p 8080:8080 colebrokamp/libpostal-rest-docker
 ```
+Example calls to the API include parsing:
+
+```
+curl -X POST -d '{"query": "3333 burnet ave cincinnati oh 45223"}' localhost:8080/parser
+```
+
+and expanding:
+
+```
+curl -X POST -d '{"query": "3333 burnet ave cincinnati oh 45223"}' localhost:8080/expand
+```
+
 ## Building
 
 ### Build image and start up container
